@@ -7,11 +7,11 @@
 <body>
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
-		background-color: #ee3124;
+		background-color: #005290;
 		font-family: "Salesforce Sans", sans-serif;
 	}
 	.embeddedServiceHelpButton .helpButton .uiButton:focus {
-		outline: 1px solid #ee3124;
+		outline: 1px solid #005290;
 	}
 	@font-face {
 		font-family: 'Salesforce Sans';
@@ -45,17 +45,17 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://iewc.my.salesforce.com',
-			'https://iewc.secure.force.com/liveAgentSetupFlow',
+			'https://sail-123--osf.my.salesforce.com',
+			'https://osf-bilanguagechat.cs24.force.com/liveAgentSetupFlow',
 			gslbBaseURL,
-			'00DA0000000gbe8',
-			'Chat_Bot',
+			'00D190000004wex',
+			'English',
 			{
-				baseLiveAgentContentURL: 'https://c.la4-c1-ia4.salesforceliveagent.com/content',
-				deploymentId: '5721H000000c2bl',
-				buttonId: '5731H00000006Bm',
-				baseLiveAgentURL: 'https://d.la4-c1-ia4.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I1H000000PB4rUAG_178941cab0f',
+				baseLiveAgentContentURL: 'https://c.la1-c1cs-ia2.salesforceliveagent.com/content',
+				deploymentId: '5721900000002lP',
+				buttonId: '5731900000002Jh',
+				baseLiveAgentURL: 'https://d.la1-c1cs-ia2.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'Bi_language',
 				isOfflineSupportEnabled: false
 			}
 		);
@@ -63,7 +63,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://iewc.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://sail-123--osf.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
